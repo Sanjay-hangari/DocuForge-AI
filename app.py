@@ -190,12 +190,10 @@ if st.button("Generate Report"):
         
 
         doc_bytes = open(docx_path, "rb").read()
-        pdf_bytes = open(pdf_path, "rb").read()
 
     st.success("Report Generated")
 
     col1, col2 = st.columns(2)
     with col1:
         st.download_button("Download Word", doc_bytes, "report.docx")
-    with col2:
-        st.download_button("Download PDF", pdf_bytes, "report.pdf")
+    
