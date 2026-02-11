@@ -1,6 +1,5 @@
 import streamlit as st
 from docx import Document
-from docx2pdf import convert
 from openai import OpenAI
 from datetime import timedelta
 from docx.shared import Pt
@@ -188,7 +187,7 @@ if st.button("Generate Report"):
         pdf_path = os.path.join(tmp, "report.pdf")
 
         generate_word(ai, schedule, docx_path)
-        convert(docx_path, pdf_path)
+        
 
         doc_bytes = open(docx_path, "rb").read()
         pdf_bytes = open(pdf_path, "rb").read()
