@@ -6,7 +6,7 @@ from docx.shared import Pt
 import os, json, tempfile, re
 
 MODEL = "meta-llama/llama-3.1-8b-instruct"
-TEMPLATE_PATH = "Templetes/Template1.docx"
+TEMPLATE_PATH = "Templetes/Template.docx"
 WORK_HOURS_PER_DAY = 8
 API_key = st.secrets["OPENROUTER_API_KEY"]
 client = OpenAI(
