@@ -15,8 +15,8 @@ client = OpenAI(
 )
 
 # ================= UI =================
-st.set_page_config("Project Planner", layout="centered")
-st.title("AI Project Report Generator")
+st.set_page_config("DocuForge AI", layout="centered")
+st.title("📄✨ DocuForge AI")
 
 overview = st.text_area("Project Overview", height=120)
 exec_summary = st.text_area("Executive Summary", height=120)
